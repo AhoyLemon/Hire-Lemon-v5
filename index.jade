@@ -12,15 +12,15 @@ html(lang="en")
       a.intro(data-for="show case study")
         figure
         .inner
-          img.logo(src="http://thefpl.us/assets/svg/logo.svg")
+          img.logo(src="../svg/logos/thefplus.svg")
           .badges
             span made with...
-            img(src="../img/tech/80/kirby.png")
-            img(src="../img/tech/80/sass.png")
-            img(src="../img/tech/80/php.png")
-            img(src="../img/tech/80/rss.png")
-            img(src="../img/tech/80/jquery.png")
-            img(src="../img/tech/80/illustrator.png")
+            img(src="../svg/tech/kirby.svg")
+            img(src="../svg/tech/sass.svg")
+            img(src="../svg/tech/php.svg")
+            img(src="../svg/tech/rss.svg")
+            img(src="../svg/tech/jquery.svg")
+            //img(src="../svg/tech/illustrator.svg")
       article
         .inner
           p The F Plus is a long running podcast in need of a snappy and intelligently designed website which can support the content provided by the podcast as well as the contributions from its extensive community.
@@ -58,33 +58,66 @@ html(lang="en")
       a.intro
         figure
         .inner
-          img.logo(src="http://mohawkcasino.com/themes/mohawk/svg/logo.svg")
+          img.logo(src="../svg/logos/mohawk.svg")
           .badges
             span made with...
-            img(src="../img/tech/80/concrete5.png")
-            img(src="../img/tech/80/sass.png")
-            img(src="../img/tech/80/php.png")
-            img(src="../img/tech/80/jquery.png")
-            img(src="../img/tech/80/illustrator.png")
+            img(src="../svg/tech/concrete5.svg")
+            img(src="../svg/tech/sass.svg")
+            img(src="../svg/tech/svg.svg")
+            img(src="../svg/tech/php.svg")
+            img(src="../svg/tech/jquery.svg")
+            img(src="../svg/tech/illustrator.svg")
       article
         .inner
           p Akwesasne Mohawk casino in upstate New York had a website that didn't fit their casino. Everything looked dark and unwelcoming, and the business wasn't able to keep content fresh and relevant. When the talks began, the site was only a year old, but built on poor planning it looked and functioned like a relic. An entirely new approach was in order.
           h3 Let's make this so it makes sense.
+          img.shot(src="img/case-studies/mohawk/add-promotion.jpg")
+          p Any casino website is going to have a lot of time-sensitive parts and competing interests, so a huge goal to the Mohawk website was to make client updates as intuitive and simple as possible. To that end, I chose 
+            a(href="http://concrete5.org") Concrete5
+            |  as the site's foundation and content management system.
+          p Using C5 meant custom building a lot of non-standard pieces to support the needs of the business, but the end result is that the pages are edited on the pages themselves, using a library of block types built individually for the casino.
+          h3 Protecting design standards.
+          img.shot(src="img/case-studies/mohawk/add-block.jpg")
+          p A site should continue to look good well after the design has been approved, and that means thinking about content beforehand and developing standards as to how that content should always be presented. In the case of Akwesasne Mohawk, every piece of content has its own standard layout, with required and optional fields. When a new item needs to be added, the content manager shouldn't have to decide how that content looks, and consistency and brand guidelines can be enforced.
+          h3 A page has a job to do.
+          img.shot(src="img/case-studies/mohawk/dining.jpg")
+          p A pretty homepage is great, but that doesn't make for a site's user experience. Users can get to a site from a whole lot of different vectors, and a well considered experience should strain to deliver the right information to that view.
+          p Mohawk delegates jobs to pages, and supports those jobs as best as it can. So wherever you land, whatever you're looking for, the site wants to help you get there. And nothing gets stale.
+          h3 Success can (sometimes) be duplicated.
+          p Launch of the new website went incredibly smoothly, traffic increase was immediate and dramatic, and the new site was able to support a lot of new efforts in search engine marketing and customer acquisition. When an event or promotion has unexpected interest levels, that information is learned and acted upon quickly.
+          p Concrete5 is a big CMS, and requires some customization to get it to perform in modern and expected ways, but I think it's worth it in this case. When limitations are made to streamline rather than hamper innovation, I think I've done a good job.
+          h3 A few more looks...
+          .last-looks
+            img(src="img/case-studies/mohawk/hotel.jpg")
+            img(src="img/case-studies/mohawk/bingo.jpg")
+            img(src="img/case-studies/mohawk/winners-club.jpg")
     section.piece.recon
       a.intro
         figure
         .inner
-          img.logo(src="http://clarkdev.cloudapp.net:8080/public/svg/approved-logo.svg")
+          img.logo(src="../svg/logos/recon.svg")
           .badges
             span made with...
-            img(src="../img/tech/80/dotnet.png")
-            img(src="../img/tech/80/sass.png")
-            img(src="../img/tech/80/knockout.png")
-            img(src="../img/tech/80/jquery.png")
+            img(src="../svg/tech/visualstudio.svg")
+            img(src="../svg/tech/sass.svg")
+            img(src="../svg/tech/svg.svg")
+            img(src="../svg/tech/jquery.svg")
+            img(src="../svg/tech/github.svg")
       article
         .inner
-          p Akwesasne Mohawk casino in upstate New York had a website that didn't fit their casino. Everything looked dark and unwelcoming, and the business wasn't able to keep content fresh and relevant. When the talks began, the site was only a year old, but built on poor planning it looked and functioned like a relic. An entirely new approach was in order.
-          h3 Let's make this so it makes sense.
+          p As a proprietary software solution built to manage millions of dollars in incoming and outgoing transactions, RECON has to be accurate. As a software system which employees spend hours a day looking at, RECON has to be good looking and easy to use.
+          p My job is the second bit.
+          h3 Lots and lots (and lots and lots) of data.
+          img.shot(src="img/case-studies/recon/demographics-report.jpg")
+          p Occasionally it is a struggle of design to codify a layout sensibility for pages which have very little relevent content. That is emphatically 
+            i not 
+            | the case here. The system pulls from massive databases worth of information in order to find the specific datapoints that are important to a specific user at a specific time.
+          p This means coming up with a persistent language which the user can understand screen to screen, allowing them to do their job with more confidence.
+          h3 Think, then rethink.
+          img.shot(src="img/case-studies/recon/create-project.jpg")
+          p The project has undergone a number of revisions based on focus groups, client meetings, and planning sessions. The concept of "edge cases was dismissed as a concept we didn't believe in.
+          p If the client felt a particular workflow was important to their business, we worked on a way to make that workflow happen.
+          p Features and utilities were not simply bolted on. New features had to be considered holistically, and changes are made elsewhere to facilitate that change.
     script(src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript")
     script(src="js/hirelemon.js" type="text/javascript")
     

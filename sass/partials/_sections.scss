@@ -1,13 +1,11 @@
 section { position: relative; text-align: center; 
   
-  &.intro { background-color:$orange; color:#eee; padding: 10px; border-bottom: 4px solid lighten($orange,18%);
-
-  }
+  &.intro { background-color:$orange; color:#eee; padding: 10px; border-bottom: 4px solid lighten($orange,18%); }
   
   &.likethis { font-weight: 700; background-color: #000; color:#fff; }
   
   &.piece { overflow: hidden; border-bottom:3px solid lighten($dark,30%);
-    .logo { width:100%; height:50%; transform:scale(0.9); transition: all 0.3s ease; }
+    .logo { width:100%; height:50%; max-width: 400px; transform:scale(0.9); transition: all 0.3s ease; }
     > a { display: block; height:50vh; cursor: pointer; position: relative;
       .inner { width:50%; height: 100%; float: right; margin-left: auto; margin-right: auto; position: relative; padding-top: 20px;} 
     }
@@ -20,7 +18,7 @@ section { position: relative; text-align: center;
   figure { background-position: center left; background-size:contain; background-repeat: no-repeat; position: absolute; top:0; left:0; right:0; bottom:0; opacity: 0.8;  transition:all 0.85s linear; background-color:$dark; }
   
   article { background-color:$dark; padding-top: 1em; padding-bottom:1em;  display: none;
-    h3 { text-align: center; padding-bottom: 0.5em; }
+    h3 { padding-bottom: 0; border-bottom: 1px solid #bbb; display: inline-block; line-height: 84%; margin-bottom: .5em; }
     .inner { max-width: 1200px; margin-left: auto; margin-right: auto; background-color:$white; padding:1em; text-align: justify; @extend %clearfix;
       .shot { max-height: 300px; margin-bottom: 12px;
         &:nth-of-type(odd) { float: left; margin-right:12px; }
@@ -47,5 +45,8 @@ section { position: relative; text-align: center;
     .logo { transform: scale(1); }
     figure { opacity:1; }
     .badges { transform: translateX(0); }
+  }
+  &.piece.active { filter: saturate(115%); 
+    
   }
 }
