@@ -3,6 +3,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Kirby" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<path fill="#EE2524" d="M50.4,0.5l-44,25v50l44,25l44-25v-50L50.4,0.5z M70,51.5l-12.4,6.7v0.9H70v9.6H30.7v-9.6h12.4v-0.9
-	l-12.4-6.7V39.6l19.6,10.6L70,39.6V51.5z"/>
+<path fill="#EE2524" d="M51,2.3L9,26.1v47.7l42,23.8l42-23.8V26.1L51,2.3z M69.8,51L58,57.4v0.9h11.8v9.2H32.3v-9.2h11.8v-0.9
+	L32.3,51V39.6L51,49.7l18.7-10.1V51z"/>
 </svg>
