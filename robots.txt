@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /erichale/
+Disallow: /helenahandjob/
+Disallow: /lemonplusjessica/
+Disallow: /simone/
+Disallow: /tapsmn/
