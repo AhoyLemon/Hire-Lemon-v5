@@ -1,11 +1,14 @@
-doctype jade
+doctype html
 html(lang="en")
   head
-    title hire lemon
+    meta(charset="utf-8")
+    meta(name="description" content="My name is Lemon. I make stuff for the web.")
+    title Hire Lemon.
     meta(name="viewport" content="width=device-width,initial-scale=1.0")
     link(href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet")
     link(href="css/hirelemon.css" rel="stylesheet")
     
+    // favicons
     link(rel="apple-touch-icon", sizes="57x57", href="/apple-touch-icon-57x57.png")
     link(rel="apple-touch-icon", sizes="60x60", href="/apple-touch-icon-60x60.png")
     link(rel="apple-touch-icon", sizes="72x72", href="/apple-touch-icon-72x72.png")
@@ -23,6 +26,22 @@ html(lang="en")
     meta(name="msapplication-TileColor", content="#ffc40d")
     meta(name="msapplication-TileImage", content="/mstile-144x144.png")
     meta(name="theme-color", content="#e7e115")
+    
+    // twitter
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:creator" content="@AhoyLemon")
+    meta(name="twitter:title" content="Hire Lemon.")
+    meta(name="twitter:description" content="My name is Lemon. I make stuff for the web.")
+    meta(name="twitter:image" content="/img/twitter-card.png")
+    meta(name="twitter:url" content="http://hirelemon.com")
+    
+    //Facebook
+    meta(property="og:title" content="Hire Lemon")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://hirelemon.com")
+    meta(name="og:image" content="/img/og-image.png")
+    meta(property="og:description" content="My name is Lemon. I make stuff for the web.")
+    meta(property="og:email" content="lemon@hirelemon.com")
     
     include ./includes/mixins.jade
   body
