@@ -120,9 +120,9 @@ section { position: relative; text-align: center;
     .spins { fill:$white; transition: all 0.5s ease; }
     &:hover {
       svg { transform: rotate(360deg); }
-      .circle { fill:$white; }
-      .inner { transform:scale(1.2); fill:$dark; }
-      .spins {fill:$dark; }
+      .circle { fill:$dark; }
+      .inner { transform:scale(1.2); }
+      //.spins {fill:$dark; }
     }
   }
 }
