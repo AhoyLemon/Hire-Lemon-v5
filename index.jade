@@ -57,12 +57,12 @@ html(lang="en")
           img.logo(src="svg/logos/mohawk.svg")
           .badges
             span made with...
-            img(src="svg/tech/concrete5.svg")
-            img(src="svg/tech/sass.svg")
-            img(src="svg/tech/svg.svg")
-            img(src="svg/tech/php.svg")
-            img(src="svg/tech/jquery.svg")
-            img(src="svg/tech/illustrator.svg")
+            +siteBadge('Concrete5', 'Concrete 5')
+            +siteBadge('Sass')
+            +siteBadge('SVG')
+            +siteBadge('PHP')
+            +siteBadge('jQuery')
+            +siteBadge('Illustrator')
       article
         .inner
           p Akwesasne Mohawk casino in upstate New York had a website that didn't fit their casino. Everything looked dark and unwelcoming, and the business wasn't able to keep content fresh and relevant. When the talks began, the site was only a year old, but built on poor planning it looked and functioned like a relic. An entirely new approach was in order.
@@ -94,12 +94,11 @@ html(lang="en")
           img.logo(src="svg/logos/thefplus.svg")
           .badges
             span made with...
-            img(src="svg/tech/kirby.svg")
-            img(src="svg/tech/sass.svg")
-            img(src="svg/tech/php.svg")
-            img(src="svg/tech/rss.svg")
-            img(src="svg/tech/jquery.svg")
-            //img(src="../svg/tech/illustrator.svg")
+            +siteBadge('Kirby')
+            +siteBadge('Sass')
+            +siteBadge('PHP')
+            +siteBadge('RSS')
+            +siteBadge('jQuery')
       article
         .inner
           p The F Plus is a long running podcast in need of a snappy and intelligently designed website which can support the content provided by the podcast as well as the contributions from its extensive community.
@@ -140,11 +139,11 @@ html(lang="en")
           img.logo(src="svg/logos/recon.svg")
           .badges
             span made with...
-            img(src="svg/tech/visualstudio.svg")
-            img(src="svg/tech/sass.svg")
-            img(src="svg/tech/svg.svg")
-            img(src="svg/tech/jquery.svg")
-            img(src="svg/tech/github.svg")
+            +siteBadge('DotNet', 'The .NET Stack')
+            +siteBadge('Sass')
+            +siteBadge('SVG')
+            +siteBadge('jQuery')
+            +siteBadge('GitHub')
       article
         .inner
           p As a proprietary software solution built to manage millions of dollars in incoming and outgoing transactions, RECON has to be accurate. As a software system which employees spend hours a day looking at, RECON has to be good looking and easy to use.
@@ -178,12 +177,12 @@ html(lang="en")
           img.logo(src="svg/logos/wrongest.svg")
           .badges
             span made with...
-            img(src="svg/tech/node.svg")
-            img(src="svg/tech/sass.svg")
-            img(src="svg/tech/jquery.svg")
-            img(src="svg/tech/jade.svg")
-            img(src="svg/tech/svg.svg")
-            img(src="svg/tech/github.svg")
+            +siteBadge('NodeJS', 'node.js')
+            +siteBadge('Sass')
+            +siteBadge('jQuery')
+            +siteBadge('jade')
+            +siteBadge('SVG')
+            +siteBadge('GitHub')
       article
         .inner
           p The Wrongest Words was created to be a fun little party game to be played on any device with a modern browser. It's as much a tech experiment as it is a game, but I think it does well in both those categories.
@@ -211,30 +210,30 @@ html(lang="en")
     section.all-tech
       h2 I use tech like...
       .tech-logos
-        +techBadge('angular', 'Angular', 1, 'javascript MVC framework')
-        +techBadge('concrete5', 'Concrete 5', 3, 'large-scale CMS')
-        +techBadge('cordova', 'Cordova', 2, 'native apps the web way')
-        +techBadge('ember', 'Ember', 1, 'javascript MVC framework')
-        +techBadge('github-dark', 'GitHub', 2, 'social coding')
-        +techBadge('illustrator', 'Illustrator', 3, 'vector artwork')
-        +techBadge('jade', 'jade', 3, 'quick, intelligent HTML')
-        +techBadge('jquery-dark', 'jquery', 3, 'javascript written better')
-        +techBadge('kirby', 'Kirby', 3, 'mid-size CMS')
-        +techBadge('visualstudio', '.NET stack', 2, 'the Microsoft way')
-        +techBadge('node-dark', 'node.js', 1, 'server-side JS')
-        +techBadge('photoshop', 'Photoshop', 3, 'raster artwork')
-        +techBadge('php', 'PHP', 2, "when the framework didn't do it right")
-        +techBadge('rss', 'RSS', 3, "broadcasting open data")
-        +techBadge('sass', 'Sass', 3, "CSS written better")
-        +techBadge('smf', 'Simple Machines', 2, "forums")
-        +techBadge('svg-dark', 'SVG', 2, "shapes can do anything")
+        +techBadge('Angular', 1, 'javascript MVC framework')
+        +techBadge('Concrete5', 3, 'large-scale CMS')
+        +techBadge('Cordova', 2, 'native apps the web way')
+        //+techBadge('Ember', 1, 'javascript MVC framework', 'ember')
+        +techBadge('GitHub', 2, 'social coding', 'GitHub-Dark')
+        +techBadge('Illustrator', 3, 'vector artwork')
+        +techBadge('jade', 3, 'quick, intelligent HTML')
+        +techBadge('jQuery', 3, 'javascript written better', 'jQuery-Dark')
+        +techBadge('Kirby', 3, 'mid-size CMS')
+        +techBadge('.NET stack', 2, 'the Microsoft way', 'DotNet')
+        +techBadge('node.js', 1, 'server-side JS', 'NodeJS-Dark')
+        +techBadge('Photoshop', 3, 'raster artwork')
+        +techBadge('PHP', 2, "when the framework didn't do it right")
+        +techBadge('RSS', 3, "broadcasting open data")
+        +techBadge('Sass', 3, "CSS written better")
+        +techBadge('Simple Machines', 2, "forums", 'SMF')
+        +techBadge('SVG', 2, "shapes can do anything", 'SVG-Dark')
     section.contact
       h2 I'm available for freelance or consulting.
       .contact-links
         a.email(href="mailto:lemon@hirelemon.com")
           svg(viewBox="0 0 100 100")
             use.circle(xlink:href="#Icon-ContactCircle")
-            use.inner(xlink:href="#Icon-Email2")
+            use.inner(xlink:href="#Icon-Email")
         a.twitter(href="https://twitter.com/AhoyLemon")
           svg(viewBox="0 0 100 100")
             use.circle(xlink:href="#Icon-ContactCircle")
@@ -242,7 +241,7 @@ html(lang="en")
         a.github(href="https://github.com/AhoyLemon")
           svg(viewBox="0 0 100 100")
             use.circle(xlink:href="#Icon-ContactCircle")
-            use.inner(xlink:href="#Icon-GitHub2")
+            use.inner(xlink:href="#Icon-GitHub")
         a.codepen(href="http://codepen.io/ahoylemon/")
           svg(viewBox="0 0 100 100")
             use.circle(xlink:href="#Icon-ContactCircle")
