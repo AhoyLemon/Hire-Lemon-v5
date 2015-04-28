@@ -1,0 +1,36 @@
+meta(charset="utf-8")
+meta(name="description" content="#{description}")
+title= siteTitle
+meta(name="viewport" content="width=device-width,initial-scale=1.0")
+link(href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet")
+link(href="css/hirelemon.css?updated=#{lastUpdated}" rel="stylesheet")
+
+// favicons
+-var faviconColor = "#e7e115"
+each val in [16, 32, 57, 60, 72, 76, 96, 114, 120, 144, 152, 180, 192]
+  if (val == 16 || val == 32 || val == 96)
+    link(rel="icon", type="image/png", href="/favicon-#{val}x#{val}.png", sizes="#{val}x#{val}")
+  else if (val == 192)
+    link(rel="icon", type="image/png", href="/android-chrome-#{val}x#{val}.png", sizes="#{val}x#{val}")
+  else 
+    link(rel="apple-touch-icon", sizes="#{val}x#{val}", href="/apple-touch-icon-#{val}x#{val}.png")
+meta(name="msapplication-TileImage", content="/mstile-144x144.png")
+link(rel="manifest", href="/manifest.json")
+meta(name="msapplication-TileColor", content="#{faviconColor}")
+meta(name="theme-color", content="#{faviconColor}")
+
+// twitter
+meta(name="twitter:card" content="summary")
+meta(name="twitter:creator" content="@AhoyLemon")
+meta(name="twitter:title" content="#{siteTitle}")
+meta(name="twitter:description" content="#{description}")
+meta(name="twitter:image" content="/img/twitter-card.png")
+meta(name="twitter:url" content="http://hirelemon.com")
+
+// Facebook
+meta(property="og:title" content="#{siteTitle}")
+meta(property="og:type" content="website")
+meta(property="og:url" content="http://hirelemon.com")
+meta(name="og:image" content="/img/og-image.png")
+meta(property="og:description" content="#{description}")
+meta(property="og:email" content="lemon@hirelemon.com")
