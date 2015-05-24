@@ -1,0 +1,29 @@
+- var siteTitle = "404: Hire Lemon"
+- var description = "Oh, this isn't a valid URL."
+- var lastUpdated = "05.24.15"
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="description" content="#{description}")
+    title= siteTitle
+    meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    link(href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet")
+    link(href="css/hirelemon.css?updated=#{lastUpdated}" rel="stylesheet")
+    link(href="css/404.css?updated=#{lastUpdated}" rel="stylesheet")
+  body
+    main
+      svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320")
+        title 404 dice
+        desc Three dice, rolled to 404.
+        path(fill="#0B0B0B" d="M348.3 48.7H132.1c-6.6 0-12 5.4-12 12v216.2c0 6.6 5.4 12 12 12h216.2c6.6 0 12-5.4 12-12V60.7c0-6.6-5.4-12-12-12zm-181.1 222c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8S196 226 196 241.9s-12.9 28.8-28.8 28.8zm0-143.2c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8S196 82.8 196 98.7s-12.9 28.8-28.8 28.8zm149.1 143.2c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8 28.8 12.9 28.8 28.8-12.9 28.8-28.8 28.8zm0-143.2c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8 28.8 12.9 28.8 28.8-12.9 28.8-28.8 28.8zM1068.8 44.5H852.6c-6.6 0-12 5.4-12 12v216.2c0 6.6 5.4 12 12 12h216.2c6.6 0 12-5.4 12-12V56.5c0-6.6-5.4-12-12-12zm-181.1 222c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8 28.8 12.9 28.8 28.8-12.9 28.8-28.8 28.8zm0-143.2c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8 28.8 12.9 28.8 28.8-12.9 28.8-28.8 28.8zm149.1 143.2c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8 28.8 12.9 28.8 28.8-12.9 28.8-28.8 28.8zm0-143.2c-15.9 0-28.8-12.9-28.8-28.8s12.9-28.8 28.8-28.8 28.8 12.9 28.8 28.8-12.9 28.8-28.8 28.8zM708.5 288.9H492.3c-6.6 0-12-5.4-12-12V60.7c0-6.6 5.4-12 12-12h216.2c6.6 0 12 5.4 12 12v216.2c0 6.6-5.4 12-12 12z")
+      section.four-oh-four
+        h1 Dude. Seriously, dude.
+        p
+          | I'm not sure exactly how you got to
+          // #echo var="REQUEST_URI"
+          | , but you shouldn't be here.
+        p Not a big deal, but maybe go back to 
+          a.four-oh-four-link(href="hirelemon.com") HireLemon.com
+          |  now?
