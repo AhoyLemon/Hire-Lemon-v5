@@ -1,1 +1,13 @@
-body{background-color:#e9e40c}section.four-oh-four{max-width:1200px;margin-left:auto;margin-right:auto}h1{text-align:center}
+body {
+  background-color: #e9e40c;
+}
+
+section.four-oh-four {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
