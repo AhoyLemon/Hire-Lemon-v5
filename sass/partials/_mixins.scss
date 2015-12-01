@@ -1,0 +1,45 @@
+@mixin flex-container($align:stretch, $direction:row, $wrap:wrap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  @if ($align != "stretch") {
+    align-items: $align;
+  }
+}
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $toColor; // fallback color
+  background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+
+@mixin flex-item($basis, $align:auto, $grow:1, $shrink:1) {
+  @if $grow == 0 {
+    width:$basis;
+    flex-basis: $basis;
+  } @else {
+    flex-basis: $basis;
+  }
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+  align-self: $align;
+}
+
+@mixin flex-split($desktop, $mobile) {
+  @include respond-to(desktop) { @include flex-item($desktop); }
+  @include respond-to(mobile) { @include flex-item($mobile); }
+}
+
+@mixin cover($position:center) {
+  background-size:cover;
+  background-position: $position;
+  background-repeat: no-repeat;
+}
+
+@mixin respond-to($media) {
+  @if $media == desktop {
+    @media only screen and (min-width: $desktop-min) { @content; }
+  }
+  @else if $media == mobile {
+    @media only screen and (max-width: $desktop-min) { @content; }
+  }
+}

@@ -422,6 +422,11 @@ section.contact {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -429,13 +434,13 @@ section.contact {
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f5f5;
+  cursor: help;
 }
 
 .also-logos .logo {
-  -webkit-flex-basis: 20%;
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%;
-  height: 170px;
+  -webkit-flex-basis: 220px;
+      -ms-flex-preferred-size: 220px;
+          flex-basis: 220px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -443,6 +448,10 @@ section.contact {
   -webkit-flex-shrink: 1;
       -ms-flex-negative: 1;
           flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  height: 180px;
   position: relative;
   overflow: hidden;
   z-index: 3;
@@ -480,8 +489,10 @@ section.contact {
   -webkit-transform: translateY(-102%);
       -ms-transform: translateY(-102%);
           transform: translateY(-102%);
-  -webkit-transition: all 0.45s ease;
-          transition: all 0.45s ease;
+  -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+          transition: all 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+  background: rgba(19, 19, 19, 0.8);
+  color: #f5f5f5;
 }
 
 .also-logos .overlay .inner {
@@ -490,19 +501,11 @@ section.contact {
 
 .also-logos .overlay h5 {
   font-size: 1.2em;
-}
-
-.also-logos .overlay .stars {
-  text-align: center;
-}
-
-.also-logos .overlay .stars .star {
-  height: 1.2em;
-  width: 1.2em;
+  padding-bottom: 0.35em;
 }
 
 .also-logos .overlay h6 {
-  font-size: 0.85em;
+  font-size: 0.75em;
   font-weight: 400;
 }
 
@@ -521,6 +524,11 @@ section.contact {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -531,13 +539,13 @@ section.contact {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: help;
 }
 
 .tech-logos .logo {
-  -webkit-flex-basis: 130px;
-      -ms-flex-preferred-size: 130px;
-          flex-basis: 130px;
-  height: 130px;
+  -webkit-flex-basis: 150px;
+      -ms-flex-preferred-size: 150px;
+          flex-basis: 150px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -545,6 +553,10 @@ section.contact {
   -webkit-flex-shrink: 1;
       -ms-flex-negative: 1;
           flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  height: 130px;
   padding: 24px;
   background-color: white;
   border: 1px solid #8f8f8f;
@@ -588,6 +600,8 @@ section.contact {
           transform: translateY(-102%);
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
+  background: rgba(19, 19, 19, 0.8);
+  color: #f5f5f5;
 }
 
 .tech-logos .logo .overlay .inner {
@@ -603,8 +617,12 @@ section.contact {
 }
 
 .tech-logos .logo .overlay .stars .star {
-  height: 1.2em;
-  width: 1.2em;
+  height: 1em;
+  width: 1em;
+}
+
+.tech-logos .logo .overlay .stars .star * {
+  fill: #e9e40c;
 }
 
 .tech-logos .logo .overlay h6 {
