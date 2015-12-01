@@ -97,9 +97,6 @@ section { position: relative; text-align: center;
       .icon { opacity: 0.2; }
       .overlay { transform:translateY(0); }
     }
-    &:active {
-      //.overlay { background-color:$orange; }
-    }
   }
   .explanation { flex-basis: 260px; text-align: left; margin-right: 60px;
     a { color:$orange; font-weight: $bold; text-decoration:none; }
