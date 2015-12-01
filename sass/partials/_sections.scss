@@ -1,6 +1,6 @@
 section { position: relative; text-align: center; 
   
-  &.intro { background-color:$orange; color:#eee; padding: 10px; border-bottom: 4px solid lighten($orange,18%); }
+  &.intro { background-color:$orange; color:#eee; padding: 2em; border-bottom: 4px solid lighten($orange,18%); }
   
   &.likethis { font-weight: 700; background-color: #000; color:#fff; }
   
