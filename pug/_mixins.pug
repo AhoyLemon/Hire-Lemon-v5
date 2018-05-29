@@ -1,0 +1,45 @@
+mixin siteBadge(title, alt)
+  if (alt)
+    svg.icon(viewBox="0 0 100 100" alt=alt)
+      use(xlink:href="#Tech-"+title)
+  else
+    svg.icon(viewBox="0 0 100 100" alt=title)
+      use(xlink:href="#Tech-"+title)
+
+mixin techBadge(title, stars, desc, file)
+  .logo 
+    if (file == "ember")
+      img.icon(src="svg/tech/"+file+".svg")
+    if (file)
+      svg.icon(viewBox="0 0 100 100")
+        use(xlink:href="#Tech-"+file)
+    else 
+      svg.icon(viewBox="0 0 100 100")
+        use(xlink:href="#Tech-"+title)
+    .overlay
+      .inner
+        h5= title
+        .stars
+          svg.star(viewBox="0 0 32 32")
+            use(xlink:href="#StarFill")
+          if (stars == 1)
+            svg.star(viewBox="0 0 32 32")
+              use(xlink:href="#StarOutline")
+          else
+            svg.star(viewBox="0 0 32 32")
+              use(xlink:href="#StarFill")
+          if (stars < 3)
+            svg.star(viewBox="0 0 32 32")
+              use(xlink:href="#StarOutline")
+          else
+            svg.star(viewBox="0 0 32 32")
+              use(xlink:href="#StarFill")
+        h6= desc
+
+mixin alsoMade(file, company, summary)
+  .logo
+    img(src="svg/logos/"+file+".svg" alt=company)
+    .overlay
+      .inner
+        h5= company
+        summary= summary

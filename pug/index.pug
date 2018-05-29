@@ -1,0 +1,224 @@
+- var siteTitle = "Hire Lemon."
+- var description = "My name is Lemon. I make stuff for the web."
+- var lastUpdated = "07.16.15"
+
+doctype html
+html(lang="en")
+  head
+    include _mixins.pug
+    include _head.pug
+  body
+    section.svg(style="display:none;")
+      include _svg.pug
+    section.intro
+      h1 My name is Lemon.
+      h3 I make stuff for the web, like this...
+    section.piece.mohawk
+      a.intro
+        figure
+        .inner
+          img.logo(src="svg/logos/mohawk.svg")
+          .badges
+            span made with...
+            +siteBadge('Concrete5', 'Concrete 5')
+            +siteBadge('Sass')
+            +siteBadge('SVG')
+            +siteBadge('PHP')
+            +siteBadge('jQuery')
+            +siteBadge('Illustrator')
+      article
+        .inner
+          p Akwesasne Mohawk casino in upstate New York had a website that didn't fit their casino. Everything looked dark and unwelcoming, and the business wasn't able to keep content fresh and relevant. When the talks began, the site was only a year old, but built on poor planning it looked and functioned like a relic. An entirely new approach was in order.
+          h3 Let's make this so it makes sense.
+          img.shot(src="img/case-studies/mohawk/add-promotion.jpg")
+          p Any casino website is going to have a lot of time-sensitive parts and competing interests, so a huge goal to the Mohawk website was to make client updates as intuitive and simple as possible. To that end, I chose 
+            a(href="http://concrete5.org") Concrete5
+            |  as the site's foundation and content management system.
+          p Using C5 meant custom building a lot of non-standard pieces to support the needs of the business, but the end result is that the pages are edited on the pages themselves, using a library of block types built individually for the casino.
+          h3 Protecting design standards.
+          img.shot(src="img/case-studies/mohawk/add-block.jpg")
+          p A site should continue to look good well after the design has been approved, and that means thinking about content beforehand and developing standards as to how that content should always be presented. In the case of Akwesasne Mohawk, every piece of content has its own standard layout, with required and optional fields. When a new item needs to be added, the content manager shouldn't have to decide how that content looks, and consistency and brand guidelines can be enforced.
+          h3 A page has a job to do.
+          img.shot(src="img/case-studies/mohawk/dining.jpg")
+          p A pretty homepage is great, but that doesn't make for a site's user experience. Users can get to a site from a whole lot of different vectors, and a well considered experience should strain to deliver the right information to that view.
+          p Mohawk delegates jobs to pages, and supports those jobs as best as it can. So wherever you land, whatever you're looking for, the site wants to help you get there. And nothing gets stale.
+          h3 Success can (sometimes) be duplicated.
+          p Launch of the new website went incredibly smoothly, traffic increase was immediate and dramatic, and the new site was able to support a lot of new efforts in search engine marketing and customer acquisition. When an event or promotion has unexpected interest levels, that information is learned and acted upon quickly.
+          p Concrete5 is a big CMS, and requires some customization to get it to perform in modern and expected ways, but I think it's worth it in this case. When limitations are made to streamline rather than hamper innovation, I think I've done a good job.
+          h3 A few more looks...
+          .last-looks
+            img(src="img/case-studies/mohawk/hotel.jpg")
+            img(src="img/case-studies/mohawk/bingo.jpg")
+            img(src="img/case-studies/mohawk/winners-club.jpg")
+    section.piece.thefplus
+      a.intro(data-for="show case study")
+        figure
+        .inner
+          img.logo(src="svg/logos/thefplus-modern.svg")
+          .badges
+            span made with...
+            +siteBadge('Kirby')
+            +siteBadge('Sass')
+            +siteBadge('PHP')
+            +siteBadge('Photoshop')
+            +siteBadge('RSS')
+            +siteBadge('GitHub')
+            +siteBadge('jQuery')
+      article
+        .inner
+          p The F Plus is a long running podcast in need of a snappy and intelligently designed website which can support the content provided by the podcast as well as the contributions from its extensive community.
+          h3 Start over, rebuild it all.
+          p In 2014, the initial podcast website (built in 2009) was straining under the weight of content it was never built to maintain. A new system had to be created tailored to the content of the site. We needed something modular, content driven, fully responsive, and as fast has humanly possible.
+          img.shot(src="img/case-studies/thefplus/edit-episode.jpg")
+          p Choosing the CMS came first. We wanted something lightweight and easy to understand. We gave a look to 
+            a(href="http://monstra.org/") Monstra
+            |, 
+            a(href="https://octobercms.com/") October
+            |, and 
+            a(href="http://www.razorcms.co.uk/") Razor
+            |  before finally landing on 
+            a(href="https://getkirby.com") Kirby
+            |  as our CMS solution.
+          p Kirby is flat-file based, meaning it doesn't interact with a database, so the site can render on any pivot point incredibly fast. Managing a piece of content is just a matter of managing the simple text file that controls that piece of content.
+          p Each type of content has been created specificaly for the site, and all necessary data can be edited in a backend panel. As this data changes and grows, so does the site, and the #1 issue with the old site (maintainability) has been resolved. As a bonus, the clever use of markdown has made the new site incredibly easy to update, so work can be done much, much faster.
+          h3 Whatever the screen, content still comes first.
+          img.shot(src="img/case-studies/thefplus/multidisplay.jpg")
+          p The site responds heroically to all browser resolutions, due to technology like 
+            a(href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/") flexbox
+            |, but also because the design is in service of the content. When you start with an enthusiastic fanbase, you know what people are looking for, and you have a better idea on how to service them. 
+          p To that end, the page templates were built from the ground up to service the content they'd hold, while adjusting display of those templates based on the screen they're being rendered on.
+          p There's no concept of an internal content holder on the website, whatever screen you have, the site is going to use it, without framing devices or repeating backgrounds.
+          h3 A satisfying design, some helpful lessons,
+          p Success can be measured in a number of different ways with this project: Traffic has increased, listenership has gone up, adding content takes less than a quarter of the time it used to, and managing user interactions is a simpler and more enjoyable process. But the other thing that makes this site a success for me is the knowledge I've walked away with.
+          p There's a lot more popular CMS solutions than Kirby out there (I've used a bunch of them), but using something so common and mature means doing a lot of retrofitting to get this broad piece of software to do the specific thing you want. Shortcuts are tempting, the code written can be embarassing.
+          p None of this was the case here. Everything in the code is there because it's reflected on the site, and when I wanted the site to do something that wasn't in the code, I had to figure out how to get it in there. And it's that kind of thing that makes me feel like a better programmer when I'm done.
+          h3 A few more looks...
+          .last-looks
+            img(src="img/case-studies/thefplus/browse-episodes.jpg")
+            img(src="img/case-studies/thefplus/episode177.jpg")
+            img(src="img/case-studies/thefplus/submit-content.jpg")
+    section.piece.recon
+      a.intro
+        figure
+        .inner
+          img.logo(src="svg/logos/recon.svg")
+          .badges
+            span made with...
+            +siteBadge('DotNet', 'The .NET Stack')
+            +siteBadge('Knockout')
+            +siteBadge('Sass')
+            +siteBadge('SVG')
+            +siteBadge('jQuery')
+            +siteBadge('GitHub')
+      article
+        .inner
+          p As a proprietary software solution built to manage millions of dollars in incoming and outgoing transactions, RECON has to be accurate. As a software system which employees spend hours a day looking at, RECON has to be good looking and easy to use.
+          p My job is the second bit.
+          h3 Lots and lots (and lots and lots) of data.
+          img.shot(src="img/case-studies/recon/demographics-report.jpg")
+          p Occasionally it is a struggle of design to codify a layout sensibility for pages which have very little relevent content. That is emphatically 
+            i not 
+            | the case here. The system pulls from massive databases worth of information in order to find the specific datapoints that are important to a specific user at a specific time.
+          p This means coming up with a persistent language which the user can understand screen to screen, allowing them to do their job with more confidence.
+          h3 Think, then rethink.
+          img.shot(src="img/case-studies/recon/create-project.jpg")
+          p The project has undergone a number of revisions based on focus groups, client meetings, and planning sessions. The concept of "edge cases" was dismissed as a concept we didn't believe in.
+          p If the client felt a particular workflow was important to their business, we worked on a way to make that workflow happen.
+          p Features and utilities were not simply bolted on. New features had to be considered holistically, and changes are made elsewhere to facilitate that change.
+          img.shot(src="img/case-studies/recon/segmentation.jpg")
+          h3 Learning the process to improve it.
+          p A large education in building RECON was understanding how the clients want it to work. Having no experience in casino database marketing, I didn't understand what the parameters were of what users would like to do, or how I could help them do it.
+          p Throughout the lifecycle of the project, I've had to become very familiar with their jobs, and then take every possible step to make that job better.
+          p I'm sure that the screenshots you seeing could be confusing, but I've had enough communication with its intended users to know that it's the best of its kind for any software of its type, and that's something I have pride in.
+          br
+          h3 A few more looks...
+          .last-looks
+            img(src="img/case-studies/recon/signin.jpg")
+            img(src="img/case-studies/recon/view-project.jpg")
+            img(src="img/case-studies/recon/edit-tags.jpg")
+    section.piece.wrongest
+      a.intro
+        figure
+        .inner
+          img.logo(src="svg/logos/wrongest.svg")
+          .badges
+            span made with...
+            +siteBadge('NodeJS', 'node.js')
+            +siteBadge('Sass')
+            +siteBadge('jQuery')
+            +siteBadge('jade-new')
+            +siteBadge('SVG')
+            +siteBadge('GitHub')
+      article
+        .inner
+          p The Wrongest Words was created to be a fun little party game to be played on any device with a modern browser. It's as much a tech experiment as it is a game, but I think it does well in both those categories.
+          h3 Always be collaborating
+          img.shot(src="img/case-studies/wrongest/github-issues.jpg")
+          p One of the earliest (and best) decisions made with this project was the launch it as a public GitHub repository. With 100% of the code available for anyone to see, this meant that anyone could see what the project is, and contribute as they wish.
+          p It also opened the project up to the GitHub ecosystem, where we could link commits to issues to milestones, all of which became a terrific way to see where we were and what we still had left to do.
+          p The project is in its early stages currently, but its great to see how far its become in such a short time. I've tweaked the designs many, many times since the first iteration, and gameplay has advanced as well.
+          h3 New stuff in the toolkit.
+          p This project was also my first experience with some new technologies, namely node.js, socket.io and redis, all of which are technologies I very much believe will make up more of our internet, and so are things that I want to have more familiarity with.
+          p It's terrific to see how well this new technology works, and exciting to hear about other people playing the game. The help I've had along the way in building this project has been wonderful, and I'm curious to see what happens with this one.
+    section.also-made
+      h2 I've also made stuff for...
+      .also-logos
+        +alsoMade('generalmills', 'General Mills', 'CSS framework for recipe site')
+        +alsoMade('lifetime', 'Lifetime Fitness', 'mobile experience for loyalty platform')
+        +alsoMade('3m', '3M', 'design and interface for several loyalty platforms')
+        +alsoMade('mnwild', 'Minnesota Wild', 'structure of season ticket holder minisite')
+        +alsoMade('usbank', 'US Bank', 'iPad application for internal use')
+        +alsoMade('ramada', 'Ramada Plaza', "Structure for hotel family locations")
+        +alsoMade('uhg', 'United Health Group', 'CSS/JS framework for intranet platform')
+        +alsoMade('miamimarlins', 'Miami Marlins', 'structure of season ticket holder minisite')
+        +alsoMade('grandcasino', 'Grand Casino', 'full development of customer facing site')
+        +alsoMade('autolite', 'Autolite', 'design of loyalty platform')
+        //+alsoMade('stockexchange', 'Twin Cities Stock Exchange', 'full web experience')
+    section.all-tech
+      h2 I use tech like...
+      .tech-logos
+        +techBadge('Angular', 1, 'javascript MVC framework')
+        +techBadge('Concrete5', 3, 'large-scale CMS')
+        +techBadge('Cordova', 2, 'native apps the web way')
+        //+techBadge('Ember', 1, 'javascript MVC framework', 'ember')
+        +techBadge('GitHub', 2, 'social coding', 'GitHub-Dark')
+        +techBadge('Illustrator', 3, 'vector artwork')
+        +techBadge('jade', 3, 'quick, intelligent HTML', 'jade-new')
+        +techBadge('jQuery', 3, 'javascript written better', 'jQuery-Dark')
+        +techBadge('Kirby', 3, 'mid-size CMS')
+        +techBadge('.NET stack', 2, 'the Microsoft way', 'DotNet')
+        +techBadge('node.js', 1, 'server-side JS', 'NodeJS-Dark')
+        +techBadge('Photoshop', 3, 'raster artwork')
+        +techBadge('PHP', 2, "when the framework didn't do it right")
+        +techBadge('RSS', 3, "broadcasting open data")
+        +techBadge('Sass', 3, "CSS written better")
+        +techBadge('Simple Machines', 2, "forums", 'SMF')
+        +techBadge('SVG', 2, "shapes can do anything", 'SVG-Dark')
+    section.contact
+      h2 I'm available for freelance or consulting.
+      .contact-links
+        a.email(href="mailto:lemon@hirelemon.com")
+          svg(viewBox="0 0 100 100")
+            use.circle(xlink:href="#Icon-ContactCircle")
+            use.inner(xlink:href="#Icon-Email")
+        a.twitter(href="https://twitter.com/AhoyLemon")
+          svg(viewBox="0 0 100 100")
+            use.circle(xlink:href="#Icon-ContactCircle")
+            use.inner(xlink:href="#Icon-Twitter")
+        a.github(href="https://github.com/AhoyLemon")
+          svg(viewBox="0 0 100 100")
+            use.circle(xlink:href="#Icon-ContactCircle")
+            use.inner(xlink:href="#Icon-GitHub")
+        a.codepen(href="http://codepen.io/ahoylemon/")
+          svg(viewBox="0 0 100 100")
+            use.circle(xlink:href="#Icon-ContactCircle")
+            use.inner(xlink:href="#Icon-CodePen")
+    script(src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript")
+    script(src="js/hirelemon.js?updated=#{lastUpdated}" type="text/javascript")
+    script(type="text/javascript").
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-15129990-14', 'auto');
+      ga('send', 'pageview');
